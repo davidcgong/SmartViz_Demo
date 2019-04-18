@@ -126,7 +126,7 @@
                 android:layout_height="55dp"
                 android:layout_marginLeft="-4dp"
                 android:layout_marginRight="-4dp"
-                android:background="@drawable/btn_purple_a400"
+                android:background="@drawable/btn_rect_primary"
                 android:text="Login"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -157,7 +157,7 @@
                     android:clickable="true"
                     android:text="Sign Up"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/purple_A400"
+                    android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
             </LinearLayout>

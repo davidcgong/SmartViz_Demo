@@ -2,7 +2,7 @@
 <resources>
 
     <integer-array name="sample_images">
-        <item>@drawable/screw_1</item>
+        <!--<item>@drawable/screw_1</item>-->
         <item>@drawable/screw_2</item>
     </integer-array>
 

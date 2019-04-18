@@ -1,5 +1,6 @@
 package com.material.components.activity.gridlist;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.material.components.R;
+import com.material.components.activity.progressactivity.ProgressLinearCenter;
 import com.material.components.adapter.AdapterGridSingleLine;
 import com.material.components.data.DataGenerator;
 import com.material.components.utils.Tools;
@@ -65,6 +67,8 @@ public class GridSingleLine extends AppCompatActivity {
             @Override
             public void onItemClick(View view, Integer obj, int position) {
                 Snackbar.make(parent_view, "Item " + position + " clicked", Snackbar.LENGTH_SHORT).show();
+                // moving to the activity regardless of which item was selected - hack for the demo
+                startActivity(new Intent(view.getContext(), ProgressLinearCenter.class));
             }
         });
 

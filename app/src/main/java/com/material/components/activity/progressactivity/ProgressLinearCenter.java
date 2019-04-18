@@ -1,5 +1,6 @@
 package com.material.components.activity.progressactivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.Snackbar;
@@ -14,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.material.components.R;
+import com.material.components.activity.ActivityWebView;
 import com.material.components.adapter.AdapterListFolderFile;
 import com.material.components.model.FolderFile;
 import com.material.components.utils.ItemAnimation;
@@ -80,19 +82,23 @@ public class ProgressLinearCenter extends AppCompatActivity {
 
         List<FolderFile> items = new ArrayList<>();
 
-        items.add(new FolderFile("Folders", true));  // add section
+        items.add(new FolderFile("Here's what we found...", true));  // add section
 
-        items.add(new FolderFile("Photos", "Jan 9, 2014", R.drawable.ic_folder, true));
-        items.add(new FolderFile("Recipes", "Jan 17, 2014", R.drawable.ic_folder, true));
-        items.add(new FolderFile("Work", "Jan 28, 2014", R.drawable.ic_folder, true));
+        items.add(new FolderFile("Head Type", "Slot", R.drawable.ic_done_all, true));
+        items.add(new FolderFile("Head Diameter", "5mm", R.drawable.ic_done, true));
+        items.add(new FolderFile("Length", "2cm", R.drawable.ic_done,true));
+        items.add(new FolderFile("Threads per inch", "50", R.drawable.ic_done,true));
+        items.add(new FolderFile("Screw Type", "Type-A point", R.drawable.ic_done,true));
+        items.add(new FolderFile("Current Storage Location", "2nd Floor Room 201", R.drawable.ic_done,true));
+        items.add(new FolderFile("Purchasing Link", "abcd.mastercarr.com", R.drawable.ic_done,true));
 
-        items.add(new FolderFile("Files", true));   // add section
-
-        items.add(new FolderFile("Vacation itinerary", "Jan 20, 2014", R.drawable.ic_insert_drive, false));
-        items.add(new FolderFile("Kitchen Remodel", "Jan 10, 2014", R.drawable.ic_insert_drive, false));
-        items.add(new FolderFile("To Do Note", "Des 25, 2013", R.drawable.ic_insert_drive, false));
-
-        items.add(new FolderFile("", true));   // add section
+//        items.add(new FolderFile("Files", true));   // add section
+//
+//        items.add(new FolderFile("Vacation itinerary", "Jan 20, 2014", R.drawable.ic_insert_drive, false));
+//        items.add(new FolderFile("Kitchen Remodel", "Jan 10, 2014", R.drawable.ic_insert_drive, false));
+//        items.add(new FolderFile("To Do Note", "Des 25, 2013", R.drawable.ic_insert_drive, false));
+//
+//        items.add(new FolderFile("", true));   // add section
 
         //set data and list adapter
         mAdapter = new AdapterListFolderFile(this, items, ItemAnimation.FADE_IN);
@@ -103,6 +109,9 @@ public class ProgressLinearCenter extends AppCompatActivity {
             @Override
             public void onItemClick(View view, FolderFile obj, int position) {
                 Snackbar.make(parent_view, "Item " + obj.name + " clicked", Snackbar.LENGTH_SHORT).show();
+                if (obj.name == "Purchasing Link") {
+                    startActivity(new Intent(view.getContext(), ActivityWebView.class));
+                }
             }
         });
 

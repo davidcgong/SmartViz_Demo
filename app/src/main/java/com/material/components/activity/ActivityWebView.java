@@ -55,6 +55,7 @@ public class ActivityWebView extends AppCompatActivity {
 
         // get extra object
         url = getIntent().getStringExtra(EXTRA_OBJC);
+        url = "https://www.mcmaster.com/screws";
         from_notif = getIntent().getBooleanExtra(EXTRA_FROM_NOTIF, false);
 
         initComponent();

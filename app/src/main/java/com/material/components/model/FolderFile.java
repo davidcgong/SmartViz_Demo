@@ -26,4 +26,10 @@ public class FolderFile {
         this.section = section;
     }
 
+    public FolderFile(String name, String date, boolean section) {
+        this.name = name;
+        this.section = section;
+        this.date = date;
+    }
+
 }
