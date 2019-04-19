@@ -17,8 +17,10 @@ import android.widget.Toast;
 
 import com.material.components.R;
 import com.material.components.activity.MainMenu;
+import com.material.components.activity.camera.CameraActivity;
 import com.material.components.activity.gridlist.GridSingleLine;
 import com.material.components.activity.list.ListSectioned;
+import com.material.components.activity.login.LoginImageTeal;
 import com.material.components.activity.settings.SettingFlat;
 import com.material.components.activity.settings.SettingProfile;
 import com.material.components.activity.settings.SettingProfileLight;
@@ -50,7 +52,7 @@ public class DashboardFinance extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // comment this out, this is just for browsing.
-                startActivity(new Intent(v.getContext(), MainMenu.class));
+                startActivity(new Intent(v.getContext(), LoginImageTeal.class));
             }
         });
 

@@ -40,7 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Welcome, Employee 1! Here you can perform screw identification, adjust your account settings, view your history, and load photos for object recognition."
+                    android:text="My Dashboard"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/grey_3" />
 

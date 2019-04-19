@@ -41,8 +41,7 @@
         <activity
             android:name=".activity.MainMenu"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.bottomnavigation.BottomNavigationBasic"
             android:screenOrientation="portrait" />
@@ -517,10 +516,11 @@
         <activity
             android:name=".activity.login.LoginSimpleLight"
             android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.login.LoginSimpleGreen"
@@ -819,6 +819,7 @@
         <activity
             android:name=".activity.dashboard.DashboardNews"
             android:screenOrientation="portrait" />
+        <activity android:name=".activity.camera.CameraActivity"></activity>
     </application>
 
 </manifest>
