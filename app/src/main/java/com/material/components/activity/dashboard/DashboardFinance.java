@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.material.components.R;
 import com.material.components.activity.MainMenu;
 import com.material.components.activity.gridlist.GridSingleLine;
+import com.material.components.activity.list.ListSectioned;
 import com.material.components.activity.settings.SettingFlat;
 import com.material.components.activity.settings.SettingProfile;
 import com.material.components.activity.settings.SettingProfileLight;
@@ -70,7 +71,7 @@ public class DashboardFinance extends AppCompatActivity {
         my_history_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(), TimelineSimple.class));
+                startActivity(new Intent(v.getContext(), ListSectioned.class));
             }
         });
 

@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/grey_1000"
+            android:background="@color/colorPrimary"
             app:contentInsetStartWithNavigation="0dp"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
@@ -82,7 +82,7 @@
                                 android:gravity="center_vertical"
                                 android:text="You "
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                                android:textColor="@color/grey_1000"
+                                android:textColor="@color/colorPrimary"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -99,7 +99,7 @@
                                 android:gravity="center_vertical"
                                 android:text="Note"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                                android:textColor="@color/grey_1000"
+                                android:textColor="@color/colorPrimary"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -177,7 +177,7 @@
                                 android:gravity="center_vertical"
                                 android:text="You "
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                                android:textColor="@color/grey_1000"
+                                android:textColor="@color/colorPrimary"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -194,7 +194,7 @@
                                 android:gravity="center_vertical"
                                 android:text="Photo"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                                android:textColor="@color/grey_1000"
+                                android:textColor="@color/colorPrimary"
                                 android:textStyle="bold" />
 
                         </LinearLayout>
@@ -277,7 +277,7 @@
                             android:gravity="center_vertical"
                             android:text="Jennifer Smith "
                             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                            android:textColor="@color/grey_1000"
+                            android:textColor="@color/colorPrimary"
                             android:textStyle="bold" />
 
                         <TextView
@@ -294,7 +294,7 @@
                             android:gravity="center_vertical"
                             android:text="Cleveland, Ohio"
                             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                            android:textColor="@color/grey_1000"
+                            android:textColor="@color/colorPrimary"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -328,7 +328,7 @@
         android:layout_margin="@dimen/spacing_large"
         android:clickable="true"
         android:tint="@android:color/white"
-        app:backgroundTint="@color/grey_1000"
+        app:backgroundTint="@color/colorPrimary"
         app:fabSize="normal"
         app:rippleColor="@color/grey_5"
         app:srcCompat="@drawable/ic_create" />
